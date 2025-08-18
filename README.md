@@ -1,6 +1,6 @@
 # My Web Development Portfolio
 
-Welcome to my portfolio repository! 🎉
+Welcome to my portfolio repository!
 This repo contains different projects I’ve built while learning web development.
 Each project has its own folder with source code and explanation.
 

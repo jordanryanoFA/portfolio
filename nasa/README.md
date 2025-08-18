@@ -24,8 +24,8 @@ Use React Vite CSS
 
 1. Clone this repo:
 
-git clone https://github.com/your-username/nasa-apod-clone.git
-cd nasa-apod-clone
+git clone https://github.com/jordanyanoFA/portfolio/nasa.git
+cd nasa
 
 2. Install dependencies:
 

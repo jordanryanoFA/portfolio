@@ -1,8 +1,16 @@
-# React + Vite
+# Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple movie search and trending app built with React and the MovieDB API.
+Users can search for movies, see trending titles, and explore details like posters, descriptions, and release dates.
 
-Currently, two official plugins are available:
+1. Features
+   - Search Movies – Find movies by title.
+   - Trending Movies – Displays trending movies from MovieDB.
+   - Movie Details – View poster, description, and release date.
+   - Clean UI – Simple and modern design.
+   - Powered by MovieDB API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Tech Stack
+   - React (Vite) – Frontend framework
+   - MovieDB API – Movie data source
+   - CSS / Tailwind (optional) – Styling

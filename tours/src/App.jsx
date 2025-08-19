@@ -1,20 +1,18 @@
 import { useEffect, useState } from 'react';
 import Loading from './components/Loading';
 import Tours from './components/Tours';
-import Message from './components/Message'; 
-
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 const url = 'https://www.course-api.com/react-tours-project';
 
 function App() {
   const [isloading, setIsLoading] = useState(true);
   const [tours, setTours] = useState([]);
-  const [message, setMessage] = useState(null);
 
   const removeTour = (id) => {
-    setMessage({ text: "Tour removed!", type: "success" });
+    toast.warning("Tour removed!");
     const newTours = tours.filter((tour) => tour.id !== id);
     setTours(newTours);
-    setTimeout(() => setMessage(null), 2000); // hide after 2s
     }
 
   const fetchTours = async () => {
@@ -23,9 +21,9 @@ function App() {
       const response = await fetch(url);
       const tours = await response.json();
       setTours(tours);
-      setMessage({ text: "Tours refreshed!", type: "info" });
-      setTimeout(() => setMessage(null), 2000);
+      toast.info("Tours refreshed!");
     } catch (error) {
+      toast.error("Error fetching tours!");
       console.log(error);
     }
     setIsLoading(false);
@@ -39,6 +37,7 @@ function App() {
     return (
       <main>
         <Loading />
+         <ToastContainer position="top-center" autoClose={2000} />
       </main>
     )
   }
@@ -46,18 +45,18 @@ function App() {
   if (tours.length === 0)  {
     return (
       <div className='title'>
-        {message && <Message text={message.text} type={message.type} />}
         <h2>no tours left</h2>
         <button type='button' style={{marginTop:'2rem'}} className='btn' onClick={()=> fetchTours()}>
           refresh
         </button>
+        <ToastContainer position="top-center" autoClose={2000} />
       </div>
     )
   }
   return (
     <main>
-      {message && <Message text={message.text} type={message.type} />}
       <Tours tours = {tours} removeTour = {removeTour} />
+      <ToastContainer position="top-center" autoClose={2000} />
     </main>
   )
 }

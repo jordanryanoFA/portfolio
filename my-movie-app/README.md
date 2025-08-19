@@ -1,7 +1,7 @@
 # Movie App
 
 A simple movie search and trending app built with React and the MovieDB API.
-Users can search for movies, see trending titles, and explore details like posters, descriptions, and release dates.
+Users can search for movies, see trending titles.
 
 1. Features
    - Search Movies – Find movies by title.
@@ -13,4 +13,5 @@ Users can search for movies, see trending titles, and explore details like poste
 2. Tech Stack
    - React (Vite) – Frontend framework
    - MovieDB API – Movie data source
-   - CSS / Tailwind (optional) – Styling
+   - CSS / Tailwind  – Styling
+   - appwrite

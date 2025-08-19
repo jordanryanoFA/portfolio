@@ -4,7 +4,7 @@ A React project that displays a list of tours with images, prices, and descripti
 Users can explore tours, expand/collapse long text, and remove tours they are not interested in.
 
 1. Features
-   - Fetches tours data from an API (https://www.course-api.com/react-tours-project)
+   - Fetches tours data from an API 
    - Shows tour title, price, and description
    - "Read More / Show Less" toggle for long text
    - "Not Interested" button to remove a tour (with alert using react-toastify)

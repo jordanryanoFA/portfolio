@@ -2,7 +2,7 @@
 
 Welcome to my portfolio repository!
 This repo contains different projects I’ve built while learning web development.
-Each project has its own folder with source code and explanation.
+Each project has its own folder.
 
 📂 Projects Included
 

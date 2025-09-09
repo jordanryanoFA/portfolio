@@ -26,7 +26,7 @@ Clean and responsive UI
 Clone the repo and run it locally:
 
 # Clone this repository
-git clone https://github.com/your-username/lorem-generator.git
+git clone https://github.com/jordanryanoFA/lorem-generator.git
 
 # Navigate to project folder
 cd lorem-generator

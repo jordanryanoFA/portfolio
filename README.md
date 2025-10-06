@@ -11,6 +11,7 @@ Each project has its own folder.
    3. Lorem Generator - A simple and customizable Lorem Ipsum text generator built with React. Users can select the number of paragraphs to generate and instantly copy or use the output.
    4. FAQ (Frequent Ask Question) - a simple web app about Frequent Ask Questions
    5. Movie App - A simple movie search and trending app built with React and the MovieDB API. Users can search for movies, see trending titles.
+   6. Birthday Reminder App - A simple app that lets you add and keep track of birthdays.
 
       (More projects will be added soon...)
 

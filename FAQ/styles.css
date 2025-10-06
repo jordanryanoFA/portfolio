@@ -1,0 +1,84 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Body & Layout === */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* === Main Container === */
+main {
+  max-width: 720px;
+  margin: 4rem auto;
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+/* === Header Section === */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+
+header p {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+/* === FAQ Section === */
+section {
+    margin-top: 2rem;
+}
+
+/* Divider Line */
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
+/* === FAQ headings === */
+section h2 {
+    font-size: 1.5rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+/* === Paragraphs and Lists === */
+section p {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+section ul, ol {
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+section li {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+/* === Links === */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

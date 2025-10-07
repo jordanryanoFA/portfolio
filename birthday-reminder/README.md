@@ -16,3 +16,14 @@ Clear all birthdays with one click.
 - Storage: `localStorage` (client-side)  
 - Bundler / Dev server: Vite
 
+## 💻 Install & Run (local)
+# clone repo
+git clone https://github.com/jordanryanoFA/portfolio/birthday-reminder.git
+cd birthday-reminder
+
+# install
+npm install
+
+# dev server
+npm run dev
+

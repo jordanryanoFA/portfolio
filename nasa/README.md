@@ -20,7 +20,7 @@ NASA APOD API
 
 Use React Vite CSS
 
-🚀 Getting Started
+# Getting Started
 
 1. Clone this repo:
 

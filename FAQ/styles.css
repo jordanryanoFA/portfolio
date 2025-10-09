@@ -1,84 +1,79 @@
-/* === Base Reset === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* === Body & Layout === */
+/* Base styling */
 body {
-  font-family: "Inter", "Segoe UI", sans-serif;
-  background-color: #f9fafb;
-  color: #111827;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9fafb; /* very light gray background */
+  color: #111827; /* dark neutral text color */
+  margin: 0;
   line-height: 1.6;
 }
 
-/* === Main Container === */
+/* Main container */
 main {
-  max-width: 720px;
-  margin: 4rem auto;
-  background: #ffffff;
-  padding: 2.5rem 3rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 800px;
+  background-color: #ffffff;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-
-/* === Header Section === */
+/* Header section */
 header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
 }
 
 header h1 {
   font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 8px;
   color: #111827;
 }
 
-
 header p {
-  color: #6b7280;
-  margin-top: 0.5rem;
-}
-/* === FAQ Section === */
-section {
-    margin-top: 2rem;
+  color: #6b7280; /* gray tone for subtext */
+  font-size: 1rem;
 }
 
-/* Divider Line */
-hr {
-  border: none;
-  border-top: 1px solid #e5e7eb;
-  margin: 2rem 0;
-}
-/* === FAQ headings === */
+/* Section headings */
 section h2 {
-    font-size: 1.5rem;
-    color: #111827;
-    margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
 }
 
-/* === Paragraphs and Lists === */
+/* Paragraph text */
 section p {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+/* Lists */
+ol, ul {
+  margin-left: 1.5rem;
   margin-bottom: 1rem;
   color: #374151;
 }
-section ul, ol {
-    margin-right: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-section li {
-  margin-bottom: 0.5rem;
-  color: #374151;
-}
 
-/* === Links === */
+/* Links */
 a {
-  color: #2563eb;
+  color: #2563eb; /* bright blue */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Horizontal divider */
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb; /* soft gray line */
+  margin: 2rem 0;
+}
+
+/* Bold text inside lists */
+b {
+  font-weight: 600;
 }

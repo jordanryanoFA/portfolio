@@ -1,0 +1,158 @@
+/* ========== Basic reset & variables ========== */
+:root{
+  --bg: #fafafa;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --shadow: 0 18px 40px rgba(15,23,42,0.06);
+  --container-width: 1100px;
+  --gap: 40px;
+  --radius: 12px;
+  --accent-green: #10b981;
+}
+
+* { box-sizing: border-box; }
+html,body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========== container uses CSS Grid for two columns ========== */
+.reviewers {
+  padding: 4.5rem 2rem;
+}
+
+.reviewers-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 520px; /* left flexible, right fixed-ish */
+  gap: var(--gap);
+  align-items: start;
+}
+
+/* ========== LEFT (info) column ========== */
+.reviewers-info { /* left column content */
+  max-width: 640px;
+}
+
+.badge-icon {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 8px 0 18px;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+/* checklist styles */
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 12px 0 0; 
+}
+
+.checklist li {
+  display:flex; align-items:center; gap:12px;
+  color: #374151;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+.check-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* ========== RIGHT (cards) column ========== */
+/* reviewers-feedback itself is a grid with two rows, gives control to place cards */
+.reviewers-feedback {
+  position: relative; /* cards can be positioned relative to this */
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 36px;
+}
+
+/* card common styles */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  width: 360px;
+  box-shadow: var(--shadow);
+  /* keep readable inside grid column */
+  justify-self: end;
+}
+
+/* first card aligns right and sits higher */
+.card-google { justify-self: end; transform: translateY(8px); }
+
+/* second card aligns left (so visually offset) */
+.card-meta {
+  justify-self: start;
+  transform: translateY(28px);
+}
+
+/* card header (logo + stars) */
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.brand {
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
+.stars img { width: 16px; height: 16px; display: inline-block; }
+
+/* author & text */
+.author { margin: 0 0 8px; font-weight: 600; font-size: 15px; }
+.card-text { margin: 0; color: var(--muted); line-height: 1.5; font-size: 14px; }
+
+/* small screens: stack columns vertically and make cards full width */
+@media (max-width: 900px) {
+  .reviewers-container {
+    grid-template-columns: 1fr; /* one column */
+  }
+
+  /* right column becomes normal flow (no absolute fancy offsets) */
+  .reviewers-feedback {
+    display: block;
+    margin-top: 24px;
+  }
+
+  .card {
+    width: 100%;
+    justify-self: stretch;
+    transform: none;
+  }
+
+  .card-google, .card-meta { justify-self: stretch; transform: none; }
+}
+
+/* optional small polish */
+@media (prefers-reduced-motion: no-preference) {
+  .card { transition: transform .18s ease, box-shadow .18s ease; }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 28px 60px rgba(15,23,42,0.09); }
+}

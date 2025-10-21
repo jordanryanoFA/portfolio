@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Caption Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Caption Generator</h1>
+        <p>Type some topic or an idea and get a caption</p>
+        <textarea id="userInput" placeholder="e.g. coffee shop promotion"></textarea>
+        <button id="generateBtn">Generate Caption</button>
+        <p id="loading" class="hidden">Generating</p>
+
+        <div class="hidden" id="result">
+            <p id="caption"></p>
+            <button id="copyBtn">Copy</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

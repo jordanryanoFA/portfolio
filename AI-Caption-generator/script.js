@@ -21,8 +21,7 @@ generateBtn.addEventListener('click', async () => {
     const data = await response.json();
 
     console.log("Response from backend:", data);
-
-    // ✅ FIX: The backend returns { text: "..." } not { caption: "..." }
+    
     caption.textContent = data.text || data.caption || 'No caption generated.';
 
     resultDiv.classList.remove('hidden');
@@ -35,8 +34,8 @@ generateBtn.addEventListener('click', async () => {
   loading.classList.add('hidden');
 });
 
-// ✅ FIX: Use correct element variable name
 copyBtn.addEventListener('click', () => {
   navigator.clipboard.writeText(caption.textContent);
   alert("Copied to clipboard!");
 });
+

@@ -1,6 +1,7 @@
+# AI Caption Generator
 AI Caption Generator is a simple Web App that use AI google gemini to create or generate automatic caption related to idea or topic.
 
-### Tech Stack
+# Tech Stack
 - HTML, CSS, JavaScript
 - Netlify Functions (serverless backend)
 - Google Gemini API

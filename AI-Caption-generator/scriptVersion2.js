@@ -12,7 +12,6 @@ generateBtn.addEventListener('click', async () => {
   loading.classList.remove('hidden');
 
   try {
-    // ✅ Send the enhanced prompt to your Netlify function
     const response = await fetch('/.netlify/functions/generatev2', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -22,11 +21,11 @@ generateBtn.addEventListener('click', async () => {
     const data = await response.json();
     console.log("Response from backend:", data);
 
-    // ✅ Convert Markdown **bold** → real <strong> HTML tags
+    // Convert Markdown **bold** → real <strong> HTML tags
     const formattedText = (data.text || data.caption || 'No caption generated.')
       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 
-    // ✅ Insert formatted HTML
+    // Insert formatted HTML
     caption.innerHTML = formattedText;
 
     resultDiv.classList.remove('hidden');
@@ -39,8 +38,9 @@ generateBtn.addEventListener('click', async () => {
   loading.classList.add('hidden');
 });
 
-// ✅ Copy button functionality (copies visible text only)
+// Copy button functionality (copies visible text only)
 copyBtn.addEventListener('click', () => {
   navigator.clipboard.writeText(caption.innerText);
   alert("Copied to clipboard!");
 });
+

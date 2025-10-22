@@ -21,7 +21,7 @@ generateBtn.addEventListener('click', async () => {
     const data = await response.json();
     console.log("Response from backend:", data);
 
-    // Convert Markdown **bold** → real <strong> HTML tags
+    // konvert Markdown **bold** → jadi <strong> HTML tags
     const formattedText = (data.text || data.caption || 'No caption generated.')
       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 
@@ -43,4 +43,5 @@ copyBtn.addEventListener('click', () => {
   navigator.clipboard.writeText(caption.innerText);
   alert("Copied to clipboard!");
 });
+
 

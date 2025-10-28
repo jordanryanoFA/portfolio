@@ -19,12 +19,12 @@ It’s a modern and responsive feature section built with semantic HTML and CSS,
 
 - Author
 
-📸 Overview
+# Overview
 
 This challenge helped me practice responsive layout design, semantic structure, and modern CSS styling.
 I focused on creating a clean design that adapts smoothly across screen sizes.
 
-🧠 What I Learned
+# What I Learned
 
 <!-- Using semantic HTML -->
 <main class="features">
@@ -67,7 +67,7 @@ I focused on creating a clean design that adapts smoothly across screen sizes.
 
 - Responsive Design Principles
 
-🌟 Features
+# Features
 
 Responsive layout
 
@@ -80,11 +80,4 @@ Subtle hover animations
 Built as part of a DevChallenges.io
  project
 
-# Author
-
-Website: your-website.com
- (add later)
-
-GitHub: @your-username
- (replace later)
  

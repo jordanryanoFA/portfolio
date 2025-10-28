@@ -1,0 +1,112 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+/* Make the whole page take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #131921;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Let main content expand naturally */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+
+header h1 {
+  color: #ff9900;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 8px;
+}
+
+.search-bar button {
+  background-color: #febd69;
+  border: none;
+  padding: 9px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Product Section */
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+}
+
+.product p {
+  font-weight: bold;
+  color: #333;
+}
+
+.product button {
+  background-color: #ffd814;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer stays at the bottom */
+footer {
+  background-color: #131921;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  .search-bar input {
+    width: 200px;
+  }
+  .product-container {
+    justify-content: center;
+  }
+}

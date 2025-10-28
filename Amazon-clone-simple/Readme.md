@@ -33,7 +33,7 @@ No additional setup or dependencies are required, as this is a static front-end 
 
 ## Screenshots
 
-*(Add screenshots here if desired, e.g., a desktop view and mobile view of the page.)*
+<img width="1920" height="865" alt="image" src="https://github.com/user-attachments/assets/49d54578-c1e5-4947-89d9-edab2b5b4c06" />
 
 ## Future Improvements
 
@@ -58,3 +58,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 [Jordan] - [Your GitHub Profile](https://github.com/jordanryanoFA)
+

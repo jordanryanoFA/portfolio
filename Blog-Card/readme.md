@@ -8,7 +8,7 @@ The goal of this project was to practice building a clean, responsive card compo
 
 - How to structure semantic HTML for reusable UI components.
 
-- Using Flexbox (or Grid, depending on your version) for alignment and layout.
+- Using Flexbox for alignment and layout.
 
 - Controlling responsive design with relative units (em, rem, %) and media queries.
 

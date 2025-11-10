@@ -1,5 +1,5 @@
 # Responsive Process Page
-This project is my solution to the Process Page Challenge on devChallenges.io, designed to replicate a professional multi-column feature section.
+This project is my solution to the Process Page Challenge on devChallenges.io (almost the same since i don't have the resource, designed to replicate a professional multi-column feature section.
 
 The primary goal was to achieve pixel-perfect visual fidelity to the provided design mockup while ensuring the component is fully responsive across all device sizes, from desktop down to mobile.
 I focused heavily on using modern CSS techniques to build a clean, maintainable, and highly accurate front-end component.

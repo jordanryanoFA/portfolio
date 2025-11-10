@@ -1,0 +1,132 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Step 1: Set the Soft Dark Background */
+body {
+    /* EDITED: Softer, purplish dark background to match design */
+    background: #110d1e; 
+    background-image: radial-gradient(circle at 50% 50%, rgba(17, 13, 30, 0.9) 0%, #110d1e 100%);
+    
+    font-family: Arial, sans-serif; 
+    color: #ffffff; 
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Step 2: Create the White Card Mockup Container */
+.process-container {
+    background-color: #ffffff; 
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 60px; 
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Resetting process section inside the white container */
+.process {
+    text-align: left;
+    color: #1e1e1e; 
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titles */
+.subheading {
+    font-size: 14px;
+    color: #6d5dfc; 
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.main-heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.25;
+    max-width: 700px;
+    /* EDITED: Reduced margin and added border for separator line */
+    margin: 0 0 30px; 
+    padding-bottom: 30px; 
+    border-bottom: 1px solid #e5e5e5; /* The clean horizontal separator */
+}
+
+
+/* Features layout */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    /* Removed complex ::before and top spacing, as separator is now on .main-heading */
+    padding-top: 0; 
+    margin-top: 0; 
+    position: relative; 
+}
+
+/* Feature Card Alignment */
+.feature {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left-aligned content */
+    justify-content: flex-start;
+    padding: 0; 
+    min-height: 200px;
+    text-align: left; 
+}
+
+/* Icon Styles */
+.feature img,
+.feature svg {
+    width: 40px; 
+    height: 40px;
+    margin-bottom: 12px; 
+}
+
+/* Title Styles */
+.feature h3 {
+    font-size: 18px;
+    font-weight: 700; /* Bolder */
+    margin-bottom: 8px;
+    color: #1e1e1e;
+}
+
+/* Paragraph Styles */
+.feature p {
+    font-size: 15px;
+    color: #4a5568; 
+    line-height: 1.6;
+    max-width: 240px;
+    margin: 0; /* Left-aligned text */
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-container {
+        padding: 30px 20px;
+    }
+    
+    .main-heading {
+        font-size: 32px;
+        /* Adjust spacing for mobile */
+        margin-bottom: 30px; 
+        padding-bottom: 20px;
+    }
+}

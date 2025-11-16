@@ -5,9 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Step 1: Set the Soft Dark Background */
 body {
-    /* EDITED: Softer, purplish dark background to match design */
     background: #110d1e; 
     background-image: radial-gradient(circle at 50% 50%, rgba(17, 13, 30, 0.9) 0%, #110d1e 100%);
     
@@ -19,7 +17,6 @@ body {
     min-height: 100vh;
 }
 
-/* Step 2: Create the White Card Mockup Container */
 .process-container {
     background-color: #ffffff; 
     border-radius: 20px;
@@ -29,7 +26,6 @@ body {
     width: 100%;
 }
 
-/* Resetting process section inside the white container */
 .process {
     text-align: left;
     color: #1e1e1e; 
@@ -52,10 +48,10 @@ body {
     font-weight: 700;
     line-height: 1.25;
     max-width: 700px;
-    /* EDITED: Reduced margin and added border for separator line */
+
     margin: 0 0 30px; 
     padding-bottom: 30px; 
-    border-bottom: 1px solid #e5e5e5; /* The clean horizontal separator */
+    border-bottom: 1px solid #e5e5e5;
 }
 
 
@@ -64,7 +60,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    /* Removed complex ::before and top spacing, as separator is now on .main-heading */
+    
     padding-top: 0; 
     margin-top: 0; 
     position: relative; 
@@ -93,7 +89,7 @@ body {
 /* Title Styles */
 .feature h3 {
     font-size: 18px;
-    font-weight: 700; /* Bolder */
+    font-weight: 700; 
     margin-bottom: 8px;
     color: #1e1e1e;
 }
@@ -104,7 +100,7 @@ body {
     color: #4a5568; 
     line-height: 1.6;
     max-width: 240px;
-    margin: 0; /* Left-aligned text */
+    margin: 0;
 }
 
 /* Responsive Styles */
@@ -125,8 +121,8 @@ body {
     
     .main-heading {
         font-size: 32px;
-        /* Adjust spacing for mobile */
         margin-bottom: 30px; 
         padding-bottom: 20px;
     }
+
 }

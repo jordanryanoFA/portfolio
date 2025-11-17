@@ -52,4 +52,4 @@ I learned to use:
 - git clone https://github.com/jordanryanoFA/portfolio/calculator.git
 - cd calculator
 - npm install
-npm run dev
+- npm run dev

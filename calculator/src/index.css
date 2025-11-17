@@ -1,0 +1,92 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* layar penuh */
+}
+
+
+/* Calculator wrapper */
+.calculator {
+  width: 350px;
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Display */
+.display {
+  background: #000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: right;
+  margin-bottom: 20px;
+  min-height: 80px;
+}
+
+.previous {
+  color: #888;
+  font-size: 14px;
+}
+
+.current {
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+/* Grid buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Button base */
+.btn {
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  transition: 0.2s;
+}
+
+/* Effects */
+.btn:hover {
+  background: #444;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Special types */
+.btn.operator {
+  background: #ff9500;
+}
+
+.btn.function {
+  background: #555;
+}
+
+.btn.equal {
+  background: #2ecc71;
+}
+
+/* Special layout */
+.zero {
+  grid-column: span 2;
+}

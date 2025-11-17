@@ -49,7 +49,7 @@ I learned to use:
 - Creating modern button interactions (hover, colors, spacing)
 
 # Installation
-git clone https://github.com/jordanryanoFA/portfolio/calculator.git
-cd calculator
-npm install
+- git clone https://github.com/jordanryanoFA/portfolio/calculator.git
+- cd calculator
+- npm install
 npm run dev

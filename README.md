@@ -12,6 +12,7 @@ Each project has its own folder.
    4. FAQ (Frequent Ask Question) - a simple web app about Frequent Ask Questions
    5. Movie App - A simple movie search and trending app built with React and the MovieDB API. Users can search for movies, see trending titles.
    6. Birthday Reminder App - A simple app that lets you add and keep track of birthdays.
+   7. Quiz-App - A simple and clean Web-Based Quiz Application built using React. This project was created as a practice project to learn component structure, custom hooks, state management, and UI layout with CSS.
 
       (More projects will be added soon...)
 

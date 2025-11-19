@@ -1,0 +1,150 @@
+/* -------- GLOBAL RESET -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* -------- LAYOUT -------- */
+.screen {
+  background: #1a1a1a;
+  width: 100%;
+  max-width: 500px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------- TEXT -------- */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.progress {
+  height: 8px;
+  background: #333;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.score-card {
+  background: #1e1e1e;
+  padding: 20px 30px;
+  border-radius: 16px;
+  margin: 20px 0 30px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-card p {
+  margin: 0;
+}
+
+.score {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.perfect {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4ade80; /* green-ish */
+}
+
+/* -------- BUTTONS -------- */
+.btn,
+.btn-option {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Primary Button */
+.btn {
+  background: #2563eb;
+  color: white;
+}
+
+.btn:hover {
+  background: #1e4fc7;
+}
+
+/* Option buttons */
+.btn-option {
+  background: #262626;
+  color: white;
+  text-align: left;
+  padding-left: 18px;
+  border: 1px solid #333;
+}
+
+.btn-option:hover {
+  background: #333333;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 480px) {
+  .screen {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .question {
+    font-size: 1.1rem;
+  }
+}

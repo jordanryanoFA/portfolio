@@ -1,16 +1,29 @@
-# React + Vite
+# Quiz App — React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean Web-Based Quiz Application built using React.
+This project was created as a practice project to learn component structure, custom hooks, state management, and UI layout with CSS.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multiple-choice quiz
 
-## React Compiler
+- Automatic score calculation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Custom hook for quiz logic (useQuiz)
 
-## Expanding the ESLint configuration
+- Restart quiz functionality
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive and clean UI
+
+- Modern UI with CSS only (no UI library)
+
+- Code structured for readability and reusability
+
+# Tech Stack
+| Tool / Library                      | Purpose                 |
+| ----------------------------------- | ----------------------- |
+| **React**                           | Component-based UI      |
+| **JavaScript (ES6)**                | Core logic              |
+| **Custom Hooks**                    | Quiz logic separation   |
+| **CSS**                             | Styling and layout      |
+| **Vite / CRA** (choose your actual) | Development environment |

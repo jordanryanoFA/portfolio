@@ -34,3 +34,4 @@ This project focuses on layout structure, responsive design, and interactive UI 
 - Mobile-first design principles
 
 # Live Demo
+https://home-page-alarado.netlify.app/

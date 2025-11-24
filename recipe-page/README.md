@@ -8,7 +8,7 @@ Frontend Mentor challenges help improve coding skills by building real projects 
 
 ## 🔗 Live Demo
 
-- **Live Site URL:** *[(Coming soon)](https://simple-recipe-page-netli.netlify.app/)*
+- **Live Site URL:** *[(Live Demo)](https://simple-recipe-page-netli.netlify.app/)*
 - **Solution URL:** *[(GitHub Repo)](https://github.com/jordanryanoFA/portfolio/tree/main/recipe-page)*
 
 ---

@@ -9,7 +9,7 @@ Frontend Mentor challenges help improve coding skills by building real projects 
 ## 🔗 Live Demo
 
 - **Live Site URL:** *(Coming soon)*
-- **Solution URL:** *(GitHub Repo)*
+- **Solution URL:** *[(GitHub Repo)](https://github.com/jordanryanoFA/portfolio/tree/main/recipe-page)*
 
 ---
 

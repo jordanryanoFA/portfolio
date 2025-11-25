@@ -5,7 +5,7 @@ The goal of the challenge is to build a visually accurate QR card using semantic
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 This practice helped improve:
 
@@ -18,7 +18,7 @@ This practice helped improve:
 
 ---
 
-## 📁 Built With
+## Built With
 
 - Semantic HTML5
 - CSS3 (Flexbox + Responsive Media Queries)
@@ -27,17 +27,7 @@ This practice helped improve:
 
 ---
 
-## 🚀 Preview
-
-| Desktop View | Mobile View |
-|-------------|-------------|
-| 🌐 1440px   | 📱 375px     |
-
-> The layout adjusts smoothly based on screen size.
-
----
-
-## 📸 Screenshot
+## Screenshot
 
 ![demo of the project](image.png)
 

@@ -1,0 +1,99 @@
+/* Import the exact font used in the original design */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Color + design system variables taken from Frontend Mentor spec */
+:root {
+  --bg: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
+  --text-dark: hsl(218, 44%, 22%);
+  --text-light: hsl(220, 15%, 55%);
+  --radius: 20px;
+}
+
+/* Reset spacing & make layout predictable */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the card perfectly on the page */
+body {
+  background: var(--bg);
+  min-height: 100vh; /* ensures full-screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Main card component */
+.card {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: var(--radius);
+  max-width: 320px; /* fixed width from design */
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* soft shadow matching design */
+}
+
+/* QR image */
+.card img {
+  width: 100%; /* ensures responsive fit */
+  border-radius: 10px; /* smaller than card radius */
+}
+
+/* Title text */
+.card h1 {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin: 1rem 0 .75rem;
+  font-weight: 700;
+}
+
+/* Supporting description text */
+.card p {
+  font-size: 0.94rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  padding-bottom: 5px;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------*/
+
+/* Small screens (mobile-first) */
+@media (max-width: 375px) {
+  .card {
+    max-width: 90%; /* Use more available space */
+    padding: 1.2rem;
+  }
+  
+  .card h1 {
+    font-size: 1.15rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Larger screens (tablets and desktops) */
+@media (min-width: 768px) {
+  body {
+    gap: 2rem;
+  }
+
+  .card {
+    max-width: 350px; /* Slightly larger card */
+  }
+
+  .card h1 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}

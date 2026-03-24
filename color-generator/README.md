@@ -8,10 +8,8 @@ You can type a HEX color code or use the built-in generator to instantly preview
 - Generate colors by for example type the name of color and the color soon generated (type red and color red generated)
 
 - Input custom HEX color codes
-
-= View multiple shades or tints of a color
-
-= Copy HEX codes easily
+- View multiple shades or tints of a color
+- Copy HEX codes easily
 
 # Built with React + Vite for fast performance
 

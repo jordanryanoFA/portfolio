@@ -1,4 +1,4 @@
-# Movie App
+# Movie App ( on repair for now )
 
 A simple movie search and trending app built with React and the MovieDB API.
 Users can search for movies, see trending titles.

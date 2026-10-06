@@ -1,4 +1,4 @@
-import parse from 'html-react-parser'; // 1. Import the parser
+import parse from 'html-react-parser'; 
 
 export default function SideBar(props) {
     const { handleToggleModal, data } = props
@@ -11,7 +11,6 @@ export default function SideBar(props) {
                 <div className="descriptionContainer">
                     <p className="descriptionTitle">{data?.date}</p>
                     
-                    {/* 2. Safely parse the HTML string into React elements */}
                     <div className="explanation-text">
                         {data?.explanation ? parse(data.explanation) : "Loading..."}
                     </div>

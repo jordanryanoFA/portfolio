@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Footer from "./components/Footer"
-import Main from "./components/Main" // (Ensure capitalization matches your file)
+import Main from "./components/Main"
 import SideBar from "./components/SideBar"
 
 function App() {
